@@ -24,3 +24,23 @@ ENV JAVA_HOME /usr/local/jdk1.8.0_202
 ENV CATALINA_HOME /usr/local/apache-tomcat-9.0.8
 ENV CATALINA_BASE /usr/local/apache-tomcat-9.0.8
 ```
+
+執行DockerCommend 內的指令
+
+
+進nginx 設定
+```
+server {
+        listen 8080;
+
+        server_name _;
+
+        root /var/www/;
+        index index.html index.htm index.jsp;
+
+        location / {
+                index index.jsp;
+               proxy_pass http://127.0.0.1:9080;#轉向tomcat container處理
+        }
+}
+```
