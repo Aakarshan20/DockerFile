@@ -24,6 +24,7 @@ ENV JAVA_HOME /usr/local/jdk1.8.0_202
 ENV CATALINA_HOME /usr/local/apache-tomcat-9.0.8
 ENV CATALINA_BASE /usr/local/apache-tomcat-9.0.8
 ```
+build Dockerfile
 
 執行DockerCommend 內的指令
 
