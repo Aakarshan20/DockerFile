@@ -1,6 +1,5 @@
 FROM centos
 MAINTAINER abcd<abcd@123.com>
-COPY c.txt /usr/local/cincontainer.txt
 ADD apache-tomcat-9.0.8.tar.gz /usr/local
 ADD jdk-8u202-linux-x64.tar.gz /usr/local
 
