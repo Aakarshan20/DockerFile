@@ -1,4 +1,4 @@
-# DockerFile
+# DockerFile For tomcat
 執行dockerfile前
 下載這包
 
@@ -45,3 +45,37 @@ server {
         }
 }
 ```
+
+
+進入容器
+(如果版號不同 自行指令)
+```
+cd apache-tomcat-9.0.8/
+cd conf
+```
+
+編輯xml
+```
+vim tomcat-users.xml
+```
+
+
+加入以下權限與用戶名(username 與 password可以改)
+
+```
+<role rolename="manager"/>
+<role rolename="manager-gui"/>
+<role rolename="admin"/>
+<role rolename="admin-gui"/>
+<role rolename="manager-script"/>
+<role rolename="manager-jmx"/>
+<role rolename="manager-status"/>
+<user username="tomcat" password="tomcat" roles="admin-gui,admin,manager-gui,manager,manager-script,manager-jmx,manager-status"/>
+```
+
+
+
+
+
+
+
