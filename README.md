@@ -12,7 +12,7 @@ sudo wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.8/bin/apache-tomc
 jdk-8u202-linux-x64.tar.gz
 ```
 
-用官網下載前要登入, 沒辦法wget ,所以先載好再丟到server中
+jdk用官網下載前要登入, 沒辦法wget, 所以先載好再丟到server中
 
 如果兩包的版本有不同 就修改dockerfile的 這5行 修改成相應的版本
 ```
@@ -24,9 +24,9 @@ ENV JAVA_HOME /usr/local/jdk1.8.0_202
 ENV CATALINA_HOME /usr/local/apache-tomcat-9.0.8
 ENV CATALINA_BASE /usr/local/apache-tomcat-9.0.8
 ```
-build Dockerfile
+build Dockerfile(在git裡面)
 
-執行DockerCommend 內的指令
+執行git裡面 DockerCommend 內的指令
 
 
 進nginx 設定
@@ -59,7 +59,7 @@ cd conf
 vim tomcat-users.xml
 ```
 
-
+## 配置以下參數 以便進入 tomcat的manager app
 加入以下權限與用戶名(username 與 password可以改)
 
 ```
