@@ -79,8 +79,9 @@ vim tomcat-users.xml
 編輯conf 的server.xml
 
 <Host>節點間 添加以下代碼 會把/myweb路由 指向f槽的myweb目錄下
+```        
 <Context paty="/myweb" docBase="f:\myweb"/>
-
+```
 
 
 
