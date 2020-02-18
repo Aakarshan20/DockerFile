@@ -54,12 +54,13 @@ cd apache-tomcat-9.0.8/
 cd conf
 ```
 
+## 配置以下參數 以便進入 tomcat的manager app
+
 編輯xml
 ```
 vim tomcat-users.xml
 ```
 
-## 配置以下參數 以便進入 tomcat的manager app
 加入以下權限與用戶名(username 與 password可以改)
 
 ```
