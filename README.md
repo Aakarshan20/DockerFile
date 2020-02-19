@@ -74,6 +74,22 @@ vim tomcat-users.xml
 <user username="tomcat" password="tomcat" roles="admin-gui,admin,manager-gui,manager,manager-script,manager-jmx,manager-status"/>
 ```
 
+再進入以下目錄
+```
+/usr/local/apache-tomcat-9.0.8/webapps/manager/META-INF
+```
+修改以下檔案
+```
+vim context.xml
+```
+
+將Valve 標籤註解
+
+```
+<!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />-->:
+```
+
 # 虛擬目錄配置
 
 編輯conf 的server.xml
