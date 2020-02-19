@@ -1,2 +1,2 @@
-sudo docker run -d -p 9080:8080 --name myt9 -v /home/tomcat9/test:/usr/local/apache-tomcat-9.0.8/webapps/test -v /home/tomcat9/tomcat9logs:/usr/local/apache-tomcat-9.0.8/logs --privileged=true mytomcat9
+sudo docker run -d -p 9080:8080 --name myt9 -v /home/tomcat9/:/usr/local/apache-tomcat-9.0.8/ -v /home/tomcat9/tomcat9logs:/usr/local/apache-tomcat-9.0.8/logs --privileged=true mytomcat9:1.0
 
