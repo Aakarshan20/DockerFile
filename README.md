@@ -48,7 +48,7 @@ server {
 
 
 進入容器
-(如果版號不同 自行指令)
+(如果版號不同 自行指定)
 ```
 cd apache-tomcat-9.0.8/
 cd conf
